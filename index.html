@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <label>Select Mode:</label>
+  <select id="modeSelector" onchange="startGame()">
+    <option value="2player">2 Players</option>
+    <option value="ai">Vs AI</option>
+  </select>
+
+  <div id="gameBoard" class="board"></div>
+  <p id="status">Player X's turn</p>
+  <button onclick="startGame()">Restart Game</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
